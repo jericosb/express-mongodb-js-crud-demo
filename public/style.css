@@ -1,0 +1,41 @@
+* { box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eef1f6; color: #1c2430; margin: 0; padding: 24px;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 24px; margin: 0 0 18px; }
+  .grid { display: grid; grid-template-columns: 300px 1fr; gap: 20px; }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  .card {
+    background: #fff; border: 1px solid #e3e8f0; border-radius: 12px; padding: 18px;
+  }
+  .card h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .04em; color: #6b7686; margin: 0 0 14px; }
+  label { display: block; font-size: 13px; color: #6b7686; margin: 0 0 4px; font-weight: 600; }
+  .f { margin-bottom: 12px; }
+  input, select {
+    width: 100%; padding: 9px 11px; border: 1px solid #e3e8f0;
+    border-radius: 8px; background: #f6f8fb; font-size: 14px;
+  }
+  .chk { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; font-size: 14px; }
+  .chk input { width: auto; }
+  button { cursor: pointer; font-weight: 600; }
+  .btn {
+    width: 100%; padding: 10px; border: none; border-radius: 8px;
+    background: #2a66c9; color: #fff; font-size: 14px;
+  }
+  .btn.cancel { background: #8a95a5; margin-top: 8px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; padding: 9px 10px; color: #6b7686; font-size: 12px;
+       text-transform: uppercase; border-bottom: 2px solid #e3e8f0; }
+  td { padding: 10px; border-bottom: 1px solid #e3e8f0; }
+  .pill { font-size: 11px; padding: 3px 9px; border-radius: 20px; font-weight: 600; }
+  .ok { background: #e3f6ea; color: #1a7f44; }
+  .no { background: #fdecec; color: #c0392b; }
+  .mini { font-size: 12px; padding: 4px 10px; border-radius: 6px;
+          border: 1px solid #e3e8f0; background: #fff; margin-right: 4px; }
+  .mini.e { color: #2a66c9; }
+  .mini.d { color: #c0392b; }
+  #msg { font-size: 13px; margin-top: 10px; min-height: 18px; }
+  .err { color: #c0392b; }
+  .good { color: #1a7f44; }

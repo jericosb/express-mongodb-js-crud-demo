@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Record System</title>
+<!-- our styles are in a separate file -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Student Record System</h1>
+  <div class="grid">
+
+    <!-- ===== LEFT - the form ===== -->
+    <div class="card">
+      <h2 id="formTitle">Add New Student</h2>
+      <div class="f">
+        <label>Full Name</label>
+        <input id="name" type="text" placeholder="Juan Dela Cruz">
+      </div>
+      <div class="f">
+        <label>Course</label>
+        <input id="course" type="text" placeholder="BSCS">
+      </div>
+      <div class="f">
+        <label>Year Level</label>
+        <input id="year" type="number" placeholder="2">
+      </div>
+      <div class="chk">
+        <input id="enrolled" type="checkbox" checked>
+        <span>Currently enrolled</span>
+      </div>
+      <button class="btn" id="saveBtn">Save Student</button>
+      <button class="btn cancel" id="cancelBtn" style="display:none">Cancel Edit</button>
+      <div id="msg"></div>
+    </div>
+
+    <!-- ===== RIGHT - the list ===== -->
+    <div class="card">
+      <h2>Students</h2>
+      <table>
+        <thead>
+          <tr><th>Name</th><th>Course</th><th>Year</th><th>Status</th><th>Actions</th></tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<!-- our JavaScript is in a separate file -->
+<script src="script.js"></script>
+</body>
+</html>

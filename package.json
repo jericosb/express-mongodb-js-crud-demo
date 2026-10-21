@@ -1,0 +1,13 @@
+{
+  "name": "student-crud",
+  "version": "1.0.0",
+  "description": "Sample full-stack CRUD app - Express + MongoDB backend, HTML/JS frontend with fetch",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0"
+  }
+}
