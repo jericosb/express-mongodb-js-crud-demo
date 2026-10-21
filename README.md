@@ -71,7 +71,7 @@ because it is saved in MongoDB, not in the page.
 
 ## How the front end connects (the new part)
 
-In public/index.html, the fetch function sends requests to those routes.
+In public/script.html, the fetch function sends requests to those routes.
 
 - loadStudents - fetch GET /students, then show the result with DOM
 - saveStudent  - fetch POST (add) or PUT (update), sending the form as JSON
